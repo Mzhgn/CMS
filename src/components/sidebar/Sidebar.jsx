@@ -1,5 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
+import { Link } from "react-router-dom";
 import LineStyleIcon from "@mui/icons-material/LineStyle";
 import TimelineIcon from "@mui/icons-material/Timeline";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
@@ -18,14 +19,18 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarLists">
-            <li className="sidebarListItems  active">
-              <LineStyleIcon className="sidebarIcon" />
-              Home
-            </li>
+            <Link to="/" className="link">
+              <li className="sidebarListItems  active">
+                <LineStyleIcon className="sidebarIcon" />
+                Home
+              </li>
+            </Link>
+
             <li className="sidebarListItems">
               <TimelineIcon className="sidebarIcon" />
               Analytics
             </li>
+
             <li className="sidebarListItems">
               <TrendingUpIcon className="sidebarIcon" />
               Sales
@@ -35,22 +40,32 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarLists">
-            <li className="sidebarListItems  active">
-              <PermIdentityIcon className="sidebarIcon" />
-              Users
-            </li>
-            <li className="sidebarListItems">
-              <StorefrontIcon className="sidebarIcon" />
-              New User
-            </li>
-            <li className="sidebarListItems">
-              <AttachMoneyIcon className="sidebarIcon" />
-              Products
-            </li>
+            <Link to="/users" className="link">
+              <li className="sidebarListItems  active">
+                <PermIdentityIcon className="sidebarIcon" />
+                Users
+              </li>
+            </Link>
+
+            <Link to="/newUser" className="link">
+              <li className="sidebarListItems">
+                <StorefrontIcon className="sidebarIcon" />
+                New User
+              </li>
+            </Link>
+
+            <Link to="/products" className="link">
+              <li className="sidebarListItems">
+                <AttachMoneyIcon className="sidebarIcon" />
+                Products
+              </li>
+            </Link>
+
             <li className="sidebarListItems">
               <BarChartIcon className="sidebarIcon" />
               Transactions
             </li>
+
             <li className="sidebarListItems">
               <MailOutlineIcon className="sidebarIcon" />
               Reports
@@ -64,10 +79,12 @@ export default function Sidebar() {
               <DynamicFeedIcon className="sidebarIcon" />
               Mail
             </li>
+
             <li className="sidebarListItems">
               <ChatBubbleIcon className="sidebarIcon" />
               Feedback
             </li>
+
             <li className="sidebarListItems">
               <MessageOutlinedIcon className="sidebarIcon" />
               Messages
