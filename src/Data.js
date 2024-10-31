@@ -45,4 +45,11 @@ let xAxisData = [
   },
 ];
 
-export { xAxisData };
+let newMembers = [
+  { id: 1, name: "Mozhgan", title: "Web Develope", img: "images/img.png" },
+  { id: 2, name: "Amir", title: "Network expert", img: "images/Amir.jpg" },
+  { id: 3, name: "Leila", title: "Accountant", img: "images/leili.png" },
+  { id: 4, name: "Sarah", title: "Sales manager", img: "images/Sarah.jfif" },
+];
+
+export { xAxisData, newMembers };
