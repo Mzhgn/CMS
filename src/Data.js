@@ -52,4 +52,39 @@ let newMembers = [
   { id: 4, name: "Sarah", title: "Sales manager", img: "images/Sarah.jfif" },
 ];
 
-export { xAxisData, newMembers };
+const transactions = [
+  {
+    id: 1,
+    customer: "Monireh Ebrahimi",
+    date: "12 Oct 2024",
+    amount: 123,
+    status: "Declined",
+    img: "images/Monireh.jpg",
+  },
+  {
+    id: 2,
+    customer: "John Smith",
+    date: "15 Oct 2024",
+    amount: 254,
+    status: "Approved",
+    img: "images/John.jpg",
+  },
+  {
+    id: 3,
+    customer: "Kate Zab",
+    date: "12 Sep 2024",
+    amount: 145,
+    status: "Approved",
+    img: "images/kate.jfif",
+  },
+  {
+    id: 4,
+    customer: "Jonas Rav",
+    date: "07 07 2024",
+    amount: 754,
+    status: "Pending",
+    img: "images/Jonas.png",
+  },
+];
+
+export { xAxisData, newMembers, transactions };

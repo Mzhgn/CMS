@@ -12,6 +12,8 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
+import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
+import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
 export default function Sidebar() {
   return (
     <div className="sidebar">
@@ -88,6 +90,25 @@ export default function Sidebar() {
             <li className="sidebarListItems">
               <MessageOutlinedIcon className="sidebarIcon" />
               Messages
+            </li>
+          </ul>
+        </div>
+        <div className="sidebarMenu">
+          <h3 className="sidebarTitle">Staff</h3>
+          <ul className="sidebarLists">
+            <li className="sidebarListItems  active">
+              <WorkOutlineOutlinedIcon className="sidebarIcon" />
+              Manage
+            </li>
+
+            <li className="sidebarListItems">
+              <TimelineIcon className="sidebarIcon" />
+              Analytics
+            </li>
+
+            <li className="sidebarListItems">
+              <AssessmentOutlinedIcon className="sidebarIcon" />
+              Reports
             </li>
           </ul>
         </div>
