@@ -174,5 +174,17 @@ const products = [
     price: "$ 857",
   },
 ];
+const productsData = [
+  { name: "Jan", sales: 1200 },
+  { name: "Feb", sales: 9800 },
+  { name: "Mar", sales: 6500 },
+];
 
-export { xAxisData, newMembers, transactions, userRows, products };
+export {
+  xAxisData,
+  newMembers,
+  transactions,
+  userRows,
+  products,
+  productsData,
+};
