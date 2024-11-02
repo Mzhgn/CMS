@@ -130,4 +130,49 @@ let userRows = [
   },
 ];
 
-export { xAxisData, newMembers, transactions, userRows };
+const products = [
+  {
+    id: 1,
+    title: "Asus",
+    avatar: "images/asus.jpg",
+    price: "$ 954",
+  },
+  {
+    id: 2,
+    title: "Msi",
+    avatar: "images/msi.jpg",
+    price: "$ 1_000",
+  },
+  {
+    id: 3,
+    title: "Samsung",
+    avatar: "images/asus.jpg",
+    price: "$ 984",
+  },
+  {
+    id: 4,
+    title: "Mac",
+    avatar: "images/mac.jpg",
+    price: "$ 1_500",
+  },
+  {
+    id: 5,
+    title: "Dell",
+    avatar: "images/del.jpg",
+    price: "$ 850",
+  },
+  {
+    id: 6,
+    title: "Toshiba",
+    avatar: "images/toshiba.jfif",
+    price: "$ 790",
+  },
+  {
+    id: 7,
+    title: "HP",
+    avatar: "images/hp.jpg",
+    price: "$ 857",
+  },
+];
+
+export { xAxisData, newMembers, transactions, userRows, products };
