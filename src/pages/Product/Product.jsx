@@ -73,7 +73,7 @@ export default function Product() {
               <label>
                 <PublishIcon />
               </label>
-              <input type="file" style={{ display: none }} />
+              <input type="file" style={{ display: "none " }} />
             </div>
             <button className="productBtn">Upload</button>
           </div>
